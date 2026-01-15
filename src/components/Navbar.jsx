@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between bg-dark-800/80 backdrop-blur-md border border-white/10 rounded-full px-6 py-3">
           <a href="#" className="text-xl font-bold tracking-tight">
-            Nivora
+            Prasish Khadka
           </a>
 
           {/* Desktop Navigation */}
