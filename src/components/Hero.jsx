@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Play } from 'lucide-react';
+import AnimatedText from './AnimatedText';
 
 export default function Hero() {
   return (
@@ -29,11 +30,14 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.1] mb-8"
           >
-            Design for
-            <br />
-            <span className="bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent">
-              Everyone.
-            </span>
+            <AnimatedText 
+              text="Design for" 
+              className="block"
+            />
+            <AnimatedText 
+              text="Everyone." 
+              className="block bg-gradient-to-r from-white via-white/90 to-white/70 bg-clip-text text-transparent"
+            />
           </motion.h1>
 
           <motion.p

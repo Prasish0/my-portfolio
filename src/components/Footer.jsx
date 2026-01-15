@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Twitter, Linkedin, Dribbble, Instagram } from 'lucide-react';
+import AnimatedText from './AnimatedText';
 
 const socialLinks = [
   { icon: Twitter, href: '#', label: 'Twitter' },
@@ -35,13 +36,12 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8">
-              Let's work
-              <br />
-              together
-            </h2>
+            <AnimatedText 
+              text="Let's work together" 
+              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 block"
+            />
             <a
-              href="mailto:hello@nivora.studio"
+              href="mailto:bipraj1977@gmail.com"
               className="group inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-medium text-lg hover:bg-white/90 transition-colors"
             >
               Start a project
